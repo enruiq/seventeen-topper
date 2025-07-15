@@ -1,88 +1,55 @@
+
 body {
+  font-family: sans-serif;
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fff;
+  padding: 0;
+  background: #fff;
   color: #333;
-  line-height: 1.6;
 }
-
 header {
-  background: #f7f7f7;
-  text-align: center;
-  padding: 3rem 1rem;
-}
-
-h1 {
-  font-size: 2.5rem;
-  color: #222;
-}
-
-.cta-button {
-  display: inline-block;
-  margin-top: 1rem;
   background: #ff69b4;
   color: white;
-  padding: 0.8rem 1.5rem;
-  text-decoration: none;
-  border-radius: 25px;
-  font-weight: bold;
-}
-
-.galeria {
+  text-align: center;
   padding: 2rem 1rem;
+}
+.cta-button {
+  background: white;
+  color: #ff69b4;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+.galeria {
+  padding: 1rem;
   text-align: center;
 }
-
-.imagenes {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
 .imagenes img {
-  width: 200px;
+  max-width: 150px;
+  margin: 0.5rem;
+  border: 2px solid #eee;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-
 .formulario {
-  padding: 2rem 1rem;
-  background: #fefefe;
+  padding: 2rem;
 }
-
-form {
-  max-width: 400px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-input, select, textarea {
+form input, form select, form textarea {
+  display: block;
+  width: 100%;
   margin-bottom: 1rem;
-  padding: 0.7rem;
-  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+button {
+  background: #28a745;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
   border-radius: 5px;
 }
-
-button {
-  background-color: #ff69b4;
-  color: white;
-  border: none;
-  padding: 0.9rem;
-  border-radius: 25px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-button:hover {
-  background-color: #e558a6;
-}
-
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #f2f2f2;
-  color: #777;
+  background: #f0f0f0;
+  font-size: 0.9rem;
 }

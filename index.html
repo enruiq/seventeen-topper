@@ -24,12 +24,18 @@
 
   <section id="pedido" class="formulario">
     <h2>Haz tu pedido</h2>
-    <form action="https://formspree.io/f/xxxxxx" method="POST">
-      <label>Nombre:</label>
+    <form>
+      <label>Nombre completo:</label>
       <input type="text" name="nombre" required />
 
-      <label>Email:</label>
-      <input type="email" name="email" required />
+      <label>Teléfono de contacto:</label>
+      <input type="tel" name="telefono" required />
+
+      <label>Instagram (opcional):</label>
+      <input type="text" name="instagram" placeholder="@tucuenta" />
+
+      <label>Número de modelo (si lo sabes):</label>
+      <input type="text" name="modelo" placeholder="Ej. Modelo 2" />
 
       <label>Texto para el topper:</label>
       <input type="text" name="texto" required />
@@ -46,15 +52,33 @@
         <option>Otro</option>
       </select>
 
-      <label>Comentarios:</label>
-      <textarea name="comentarios" rows="4"></textarea>
-
-      <button type="submit">Enviar pedido</button>
+      <label>Comentarios adicionales:</label>
+      <textarea name="comentarios" rows="4" placeholder="Detalles a tener en cuenta..."></textarea>
     </form>
+
+    <div class="pago">
+      <h3>Paga tu topper:</h3>
+      <div class="pagos">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+          <input type="hidden" name="cmd" value="_xclick">
+          <input type="hidden" name="business" value="tu-correo-paypal@example.com">
+          <input type="hidden" name="item_name" value="Topper personalizado">
+          <input type="hidden" name="amount" value="8.00">
+          <input type="hidden" name="currency_code" value="EUR">
+          <button type="submit">💳 Pagar con PayPal</button>
+        </form>
+        <div class="bizum">
+          <p>📱 También puedes pagar por <strong>Bizum</strong> al número:</p>
+          <p class="bizum-numero">👉 <strong>622 337 465</strong></p>
+          <p>🔖 Añade en el concepto: <strong>"topper + tu nombre"</strong></p>
+          <p>📩 Luego envíanos un mensaje con el justificante por <a href="https://instagram.com/seventeen.regalos" target="_blank">@seventeen.regalos</a> o WhatsApp.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Seventeen Topper · Hecho con ❤️ desde Andalucía</p>
+    <p>© 2025 Seventeen Topper · Síguenos en <a href="https://instagram.com/seventeen.regalos" target="_blank">@seventeen.regalos</a></p>
   </footer>
 </body>
 </html>

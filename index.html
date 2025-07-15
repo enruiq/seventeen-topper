@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Seventeen Topper</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎂 Seventeen Topper</h1>
+    <p>Topper de tarta personalizado por solo <strong>8 €</strong></p>
+    <a href="#pedido" class="cta-button">Encargar el tuyo</a>
+  </header>
+
+  <section class="galeria">
+    <h2>Ejemplos reales</h2>
+    <div class="imagenes">
+      <img src="topper1.jpg" alt="Topper personalizado 1" />
+      <img src="topper2.jpg" alt="Topper personalizado 2" />
+      <img src="topper3.jpg" alt="Topper personalizado 3" />
+    </div>
+  </section>
+
+  <section id="pedido" class="formulario">
+    <h2>Haz tu pedido</h2>
+    <form action="https://formspree.io/f/xxxxxx" method="POST">
+      <label>Nombre:</label>
+      <input type="text" name="nombre" required />
+
+      <label>Email:</label>
+      <input type="email" name="email" required />
+
+      <label>Texto para el topper:</label>
+      <input type="text" name="texto" required />
+
+      <label>Color deseado:</label>
+      <input type="text" name="color" placeholder="Ej. dorado, blanco..." />
+
+      <label>Tipo de evento:</label>
+      <select name="evento">
+        <option>Boda</option>
+        <option>Cumpleaños</option>
+        <option>Comunión</option>
+        <option>Bautizo</option>
+        <option>Otro</option>
+      </select>
+
+      <label>Comentarios:</label>
+      <textarea name="comentarios" rows="4"></textarea>
+
+      <button type="submit">Enviar pedido</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Seventeen Topper · Hecho con ❤️ desde Andalucía</p>
+  </footer>
+</body>
+</html>
